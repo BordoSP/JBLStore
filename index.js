@@ -16,7 +16,7 @@ require('http').createServer(function(request, response) {
         bot.sendMessage(id, string);   
       });
 
-}).listen(process.env.PORT || 3000);
+}).listen(process.env.PORT || 80);
 
 
 
