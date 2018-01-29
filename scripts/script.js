@@ -1,6 +1,6 @@
 function sendDataToServer() {
             var name = document.getElementById("applicationName").value;
-            var phone = document.getElementById("applicationEmail").value;
+            var phone = document.getElementById("applicationTelephone").value;
             if(name == "" || phone == "") {
                 return false;
             }
