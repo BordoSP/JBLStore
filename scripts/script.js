@@ -1,4 +1,7 @@
 function sendDataToServer() {
+            if(document.getElementById("applicationName").value == "" || document.getElementById("applicationEmail").value == "") {
+                return false;
+            }
             var data = {};
             var successForm = document.getElementById("form-success");
             data.name = document.getElementById("applicationName").value;
