@@ -13,3 +13,8 @@ function sendDataToServer() {
             successForm.style.display = "block";
         }
 
+var okBtn = document.getElementById("okay");
+var successForm = document.getElementById("form-success");
+okBtn.onclick = function() {
+    successForm.style.display = "none";
+}
