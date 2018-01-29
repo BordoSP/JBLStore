@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <title>Портативная стереозвуковая колонка jbl charge 3</title>
     <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Портативная стереозвуковая колонка jbl charge 3">
     <meta name="kewords" content="Портативная стереозвуковая колонка jbl charge 3">
-    <link href="style.css" rel="stylesheet">
-    <link href="reset.css" rel="stylesheet">
+     <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113178520-1"></script>
     <script>
@@ -17,13 +23,14 @@
 
       gtag('config', 'UA-113178520-1');
     </script>
-
+   
+  <script src="scripts/jquery.viewportchecker.js"></script>
 </head>
 <body>
     <div id="header">
        <div class="wrapper">
         <img class="logo" src="img/img1.png">
-        <h1 class="header-text">
+        <h1 class="header-text animated fadeInUp">
             <span class="header-text-title">ОРИГНАЛЬНАЯ BLUETOOTH КОЛОНКА JBL CHARGE 3</span>
             </br>
             <span class="header-text-description">УСПЕЙ ЗАКАЗАТЬ СЕЙЧАС ПО НАИБОЛЬШЕЙ СКИДКЕ</span>
@@ -37,7 +44,7 @@
                 <span class="header-price-discount">4300</span>
             </p>
         </div>
-        <div class="buy-btn-wrapper">
+        <div class="buy-btn-wrapper animated infinite pulse">
             <a href="#order" class="buy-btn">Заказать!</a>
         </div>
        </div>
@@ -85,7 +92,7 @@
                 <li>Время работы аккумулятора: до 20 часов</li>
                 <li>Вес 800 гр.</li>
                 <li>Power Supply 5VDC USB output: 5V 2.1A (maximum)</li>
-                <li>Bluetooth 4.0 с низким энергопоиреблением</li>
+                <li>Bluetooth 4.0 с низким энергопотреблением</li>
                 <li>Дополнительно: Встроенный микрофон, Подзарядка внешних устройств, влагозащитный корпус</li>
             </ul>
             </div>
@@ -159,29 +166,45 @@
         <div class="wrapper">
            <a name="order"></a>
             <div class="form-title">
-                <h1>Закажи колонку JBL Charge 3 прямо сейчас!</h1>
+                <h1>Закажи колонку <strong>JBL Charge 3</strong> прямо сейчас!</h1>
+                 <br>
+                <span class="header-price-discount">Цена со скидкой: 4300 грн.</span>
+                <br>
                 <br>
                 <h2>До конца акции осталось:</h2>
                 <br>
-                <script src="timerscript.js"></script>
+                <script src="scripts/timerscript.js"></script>
             </div>
             
             <div class="main">
       <p>Оставьте ваши контактные данные и наш менеджер<br/>
-свяжется с вами в течении 30 секунд</p>
+свяжется с вами в течении 1 минуты</p>
        
 		<form id="application" name=" application ">
 			<input name="name" id="applicationName" maxlength="20" placeholder="Введите ваше имя" required />
 			<input name="email" type="email" id="applicationEmail" maxlength="40" placeholder="Введите ваш E-mail" required/>
 			<input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required />
-			<button class="applicationButton" onclick="sendDataToServer()"> Перезвонить мне </button>
+			<button class="applicationButton animated infinite pulse" onclick="sendDataToServer()"> Перезвонить мне </button>
 		</form>
 		
 	</div>
-            
+            <div id="form-success">
+                <h2>Спасибо!<br> Ваша заявка принята</h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>Наши менеджеры свяжутся с вами в ближайшее время</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a id="okay" class="action-button shadow animate green">Спасибо!</a>
+            </div>
         </div>
     </div>
     
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/scroll.js"></script>
 </body>
 </html>
