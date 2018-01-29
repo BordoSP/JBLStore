@@ -13,9 +13,3 @@ function sendDataToServer() {
             successForm.style.display = "block";
         }
 
-var formBtnClose = document.getElementById("okay");
-var successForm = document.getElementById("form-success");
-
-formBtnClose.onclick = function() {
-    successForm.style.display = "none";
-}
