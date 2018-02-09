@@ -8,7 +8,7 @@ body {
 #header {
     width: 100%;
     min-width: 1070px;
-    background: url(../img/img2.jpg) center transparent;
+    background: url(../img/img2-min.jpg) center transparent;
     background-repeat: no-repeat;
     background-size: cover;
     height: 770px;
@@ -56,6 +56,9 @@ body {
 
 .header-price-discount {
     text-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
+    
+    
+    
 }
 
 .buy-btn {
@@ -95,7 +98,7 @@ body {
     margin-left: -81px;
     top: 465px;
     font-weight: bold;
-    background: url(../img/price.png) no-repeat scroll 0% 0% transparent;
+    background: url(../img/price-min.png) no-repeat scroll 0% 0% transparent;
     background-size: 170px 170px;
 }
 
@@ -111,7 +114,13 @@ body {
 
 .header-price-discount {
     font-size: 48px;
-    color: green;
+    color: #14f210;
+}
+
+.discount20 {
+    position: absolute;
+    top: 565px;
+    left: 565px;
 }
 
 .header-price-fullPrice {
@@ -152,7 +161,7 @@ body {
 
 .hr {
     height: 47px;
-    background: url(../img/hr.png) no-repeat center;
+    background: url(../img/hr-min.png) no-repeat center;
 }
 
 #characteristic {
@@ -188,7 +197,10 @@ ul li {
 #reasons {
     height: 600px;
     min-width: 1070px;
-    background-color: #eeeeee;
+/*    background-color: #eeeeee;*/
+    background: url(../img/businessbg-min.jpg) no-repeat;
+    background-size: cover;
+    
 }
 
 .reasons-title {
@@ -198,7 +210,7 @@ ul li {
     font-weight: bold;
     padding-top: 50px;
     color: black;
-    text-shadow: 4px 4px 2px white;
+    
     
 }
 
@@ -229,7 +241,7 @@ ul li {
 #gift {
     min-width: 1070px;
     height: 514px;
-    background: url(../img/gift.jpg) no-repeat scroll center center transparent;
+    background: url(../img/gift-min.jpg) no-repeat scroll center center transparent;
 }
 
 .podarok-txt {
@@ -279,14 +291,8 @@ ul li {
 #form {
     height: 925px;
     min-width: 1070px;
-/*    background-color: #131726;*/
-    background: -moz-linear-gradient(45deg, rgba(19,23,38,1) 0%, rgba(0,74,74,1) 100%);
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(19,23,38,1)), color-stop(100%, rgba(0,74,74,1)));
-    background: -webkit-linear-gradient(45deg, rgba(19,23,38,1) 0%, rgba(0,74,74,1) 100%);
-    background: -o-linear-gradient(45deg, rgba(19,23,38,1) 0%, rgba(0,74,74,1) 100%);
-    background: -ms-linear-gradient(45deg, rgba(19,23,38,1) 0%, rgba(0,74,74,1) 100%);
-    background: linear-gradient(45deg, rgba(19,23,38,1) 0%, rgba(0,74,74,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004A4A', endColorstr='#131726',GradientType=1 ); 
+    background: url(../img/form-bg-min.jpg) no-repeat;
+    background-size: cover;
 
 }
 
@@ -314,6 +320,7 @@ ul li {
     font-family: 'PT Sans', sans-serif;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
     text-align: center;
+    
 }
 
 .main p {
@@ -379,7 +386,7 @@ ul li {
 
 .applicationButton {
     margin-top: 25px;
-    background: #30ad64;
+    background: #14db0d;
     border: none;
     width: 100%;
     height: 73px;
@@ -430,7 +437,6 @@ input {
 }
 
 .action-button { 
-    
     padding: 10px 40px;
     margin: 0px 10px 10px 0px;  
     border-radius: 10px;
