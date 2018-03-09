@@ -2,9 +2,9 @@ var static = require('node-static');
 var file = new static.Server();
 
 var TelegramBot = require('node-telegram-bot-api');
-var token = "501714885:AAF5aZil_ctUlMb1EFndRWtHfyp81ci38ag";
+var token = "token";
 var bot = new TelegramBot(token, {polling: true});
-var id = 355555637;
+var id = chat id;
 
 var counter = 0;
 
